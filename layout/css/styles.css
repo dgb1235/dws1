@@ -1,0 +1,41 @@
+body {
+	font-family: Arial, Verdana, sans-serif;
+}
+
+#navigation {
+	;
+}
+
+#content {
+	overflow: auto;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 1.995em;
+}
+
+h3 {
+	font-size: 1.4625em;
+}
+
+p img {
+	width: 380px;
+	float: left;
+	margin: 20px;
+}
+
+#column1of2 {
+	width: 280px;
+	margin: 10px;
+	float: left;
+}
+
+#column2of2 {
+	width: 280px;
+	margin: 10px;
+	float: left;
+}
