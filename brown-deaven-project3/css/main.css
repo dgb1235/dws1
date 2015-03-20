@@ -1,0 +1,89 @@
+/* Setting the background of the page to a light gray */
+body {
+	background-color: rgba(85, 85, 85, 0.85);
+	font-family: sans-serif;
+	width: 99%;
+}
+/* Moving heading to the middle of the page and giving it a "Lamborghini yellow" color whilst changing the font-style, font-family, and font-size*/
+h1 {
+	border: 5px solid #fff;
+	width: 21%;
+	height: 1%;
+	margin: 0.004% auto;
+	border-radius: 10px;
+	color: #ffca42;
+	padding: 20px;
+	text-align: center;
+	background-color: #000;
+	font-style: italic;
+	font-family: helvetica;
+	font-size: 2em;
+	font-weight: normal;
+}
+/* Giving p.one a border as well as moving it to the center of the page and changing the font-family */
+p.one {
+	border:2px solid #000;
+	width: 56%;
+	margin: 0.004% auto;
+	padding: 5px;
+	text-align: center;
+	font-family: sans-serif;
+	line-height: 20px;
+	
+}
+/* Making an inline ordered list */
+li.one {
+	display: inline;
+	width: 300px;
+	padding: 10px;
+	margin: 5px;
+}
+/* Moving anchor with the class of one (photo and link) to the center of the page */
+a.one {
+	display: block;
+	width: 500px;
+	margin: auto;
+	text-align: center;
+}
+/* Giving all images a border of 5 pixels */
+img {
+	display: block;
+	border: 5px solid #000;
+}
+/* Giving "Pictures of the 5 Most Expensive Lamborghinis" a color, shadow, and Web Font */
+h2.one {
+	color: #681818;
+	text-shadow: 0.25px 0.25px #fff;
+	/*  */
+	font-family: 'Lato', sans-serif;
+}
+/* Changed the ordered list from displaying numbers to displaying roman numerals in upper case */
+ol {
+	list-style-type: upper-roman;
+}
+/* Giving all unselected links a dark blue color */
+a:link {
+	color: #2f10da;
+}
+/* Giving all selected links a purple color */
+a:visited {
+	color: #3d1868;
+}
+/* Giving all links the same "Lamborghini yellow" color that is used in h1 when hovered over */
+a:hover {
+	color: #ffca42;
+}/* Giving all links a black color while being pressed */
+a:active {
+ color: #000;
+}
+/*move ul to the right of the page*/
+ul {
+	width: 65%;
+	float: right;
+	overflow: hidden;
+	text-align: right;
+	margin 20px;
+}
+#lambo-cars {
+	width: 17.5%;
+}
