@@ -1,15 +1,24 @@
-/* Setting the background of the page to a light gray */
+/* Setting the background of the page to a darker gray fading into a light gray */
 body {
-	background-color: rgba(85, 85, 85, 0.85);
+	background: rgb(40,52,59); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(40,52,59,1) 0%, rgba(130,140,149,1) 0%, rgba(181,189,200,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(40,52,59,1)), color-stop(0%,rgba(130,140,149,1)), color-stop(100%,rgba(181,189,200,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(40,52,59,1) 0%,rgba(130,140,149,1) 0%,rgba(181,189,200,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(40,52,59,1) 0%,rgba(130,140,149,1) 0%,rgba(181,189,200,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(40,52,59,1) 0%,rgba(130,140,149,1) 0%,rgba(181,189,200,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(40,52,59,1) 0%,rgba(130,140,149,1) 0%,rgba(181,189,200,1) 100%); /* W3C */
+	/* Give everything contained in the body a new font-family */
 	font-family: sans-serif;
+	/* Give the body a width to be used later when floating */
 	width: 99%;
 }
 /* Moving heading to the middle of the page and giving it a "Lamborghini yellow" color whilst changing the font-style, font-family, and font-size*/
 h1 {
+	/* Give h1 a rounded border and its' own personal font-family and size */
 	border: 5px solid #fff;
 	width: 21%;
 	height: 1%;
-	margin: 0.004% auto;
+	margin: 10px auto;
 	border-radius: 10px;
 	color: #ffca42;
 	padding: 20px;
@@ -44,6 +53,9 @@ a.one {
 	width: 500px;
 	margin: auto;
 	text-align: center;
+	/* Put a horizontally repeating background image behind the heading of the anchor */
+	background-image: url("../images/steel.png");
+	background-repeat: repeat-x;
 }
 /* Giving all images a border of 5 pixels */
 img {
@@ -54,12 +66,17 @@ img {
 h2.one {
 	color: #681818;
 	text-shadow: 0.25px 0.25px #fff;
-	/*  */
 	font-family: 'Lato', sans-serif;
 }
 /* Changed the ordered list from displaying numbers to displaying roman numerals in upper case */
 ol {
 	list-style-type: upper-roman;
+	width: 500px;
+	margin: 10px;
+}
+/* Give the list items in the ol room between each other */
+ol li {
+	margin: 20px;
 }
 /* Giving all unselected links a dark blue color */
 a:link {
@@ -76,14 +93,37 @@ a:hover {
 a:active {
  color: #000;
 }
-/*move ul to the right of the page*/
+/* Move ul to the right of the page */
 ul {
 	width: 65%;
 	float: right;
 	overflow: hidden;
 	text-align: right;
-	margin 20px;
 }
-#lambo-cars {
-	width: 17.5%;
+/* Make the height of the container equal to the height of the floated elements */
+blockquote {
+	overflow: auto;
+}
+/* Give the three columns a width and float them inline */
+blockquote p {
+	width: 31%;
+	float: left;
+}
+/* Give column 1 a margin to center it vertically in the container */
+#column1of3 {
+	margin: 5% 1%;
+}
+/* Give column 2 a margin to center it vertically in the container */
+#column2of3 {
+	margin: 4.2% 1%;
+}
+/* Give column 3 a margin*/
+#cloumn3of3 {
+	margin: 1%;
+}
+/* Push the paragraph over to the right to leave room for the icon */
+#fb {
+	padding: 2px 0 0 26px;
+	background-image: url("../images/1427067573_facebook-16.png");
+	background-repeat: no-repeat;
 }
